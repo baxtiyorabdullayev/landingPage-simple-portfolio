@@ -1,0 +1,406 @@
+/* core style */
+body {
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
+}
+
+.clerafix {
+  clear: both;
+}
+
+.button {
+  margin-top: 30px;
+  border: none;
+  background-image: linear-gradient(
+    to left,
+    #1345e6 0%,
+    #ed239f 50%,
+    #1345e6 100%
+  );
+  background-size: 200%;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-position: right center;
+  animation-duration: 5s;
+}
+
+.blur-line {
+  display: inline-block;
+  margin-left: 5px;
+  width: 80px;
+  height: 5px;
+  background-color: rgba(237, 35, 159, 0.6);
+  filter: blur(5px);
+  border-radius: 5px;
+}
+
+.style-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #797979;
+}
+
+.style-title {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #05364d;
+  margin-top: 5px;
+}
+
+/* main header */
+
+.main-header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 10;
+}
+
+.main-header__logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__logo img {
+  width: 64px;
+}
+
+.main-navigation {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-navigation__item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.main-navigation__item a {
+  color: #05364d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main-navigation__item a:hover {
+  color: #efb6fd;
+}
+
+.main-navigation__item.active a {
+  color: #efb6fd;
+}
+
+/* main section */
+
+.main-section {
+  padding: 100px 30px;
+}
+
+.main-section > div {
+  width: 50%;
+  float: left;
+}
+
+.main-section__myname {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 600;
+  color: #05364e;
+}
+
+.main-section__myjob {
+  color: #05364e;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.main-section__social a {
+  color: #8fa1aa;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.main-section__social i:hover {
+  color: #1c44e4;
+}
+
+.main-section__image {
+  text-align: right;
+}
+
+/* statistics section */
+
+.statistics-section {
+  padding: 100px;
+}
+
+.statistics-section__items {
+  display: inline-block;
+  background-color: #f8faff;
+  text-align: center;
+  padding: 5px 10px;
+  margin-right: 25px;
+  width: 150px;
+}
+
+.statistics-section__number {
+  font-size: 27px;
+  margin-bottom: 5px;
+  color: blue;
+}
+
+.statistics-section__title {
+  font-size: 16px;
+  font-weight: 300;
+  color: #797979;
+}
+
+/*About me Section*/
+
+.about-me {
+  padding: 100px 0;
+}
+
+.about-me > div {
+  width: 50%;
+  float: left;
+}
+
+.about-me__image img {
+  width: 100%;
+}
+
+.about-me__discription {
+  font-size: 14px;
+  font-weight: 300;
+  color: #797979;
+  line-height: 30px;
+}
+
+/*Services section*/
+
+.my-service {
+  padding-top: 100px;
+}
+
+.my-services-cards {
+  display: inline-block;
+  width: 30%;
+  padding: 60px 30px;
+  background-color: #f8faff;
+  margin-right: 3%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.my-services-cards__icon {
+  width: 64px;
+}
+
+.my-services-cards:hover {
+  background-color: #5f30ff;
+}
+
+.my-services-cards:hover .my-services-cards__title,
+.my-services-cards:hover .my-services-cards__discription,
+.my-services-cards:hover .my-services-cards__link {
+  color: white;
+}
+
+.my-services-cards__title {
+  color: #05364d;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.my-services-cards__discription {
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #797979;
+}
+
+.my-services-cards__link {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #05364d;
+  text-decoration: none;
+}
+
+/*My clients section*/
+
+.my-clients {
+  padding-top: 100px;
+}
+
+.my-clients > div {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.my-clients__images img {
+  width: 60%;
+}
+
+.my-clients__info {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.my-clients__name {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.my-clients__position {
+  font-size: 14px;
+  font-weight: 300;
+  color: #5b6d75;
+}
+
+.my-clients__review {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #5b6d75;
+}
+
+.ratecolor {
+  color: gold;
+}
+
+/* Portfolio section */
+.portfolio {
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.portfolio-filters {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 50px;
+}
+ul {
+  padding-inline-start: 0px;
+}
+
+.portfolio-filters li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.portfolio-filters li.active,
+.portfolio-filters li:hover {
+  color: #1345e6;
+}
+
+.portfolio-items {
+  margin-top: 50px;
+}
+
+.portfolio-item {
+  display: inline-block;
+  position: relative;
+  /* width: 50%; */
+  /* cursor: pointer; */
+}
+
+portfolio-items img {
+  margin-right: 300px;
+}
+
+.portfolio-item__info a:hover {
+  color: #b8e613;
+}
+
+.portfolio-item__image {
+  border: 1px solid rebeccapurple;
+  margin-right: 10px;
+  width: 90%;
+}
+
+.image-1 {
+  z-index: 3;
+}
+
+.image-2 {
+  z-index: 2;
+}
+
+.image-3 {
+  z-index: 1;
+}
+
+.portfolio-item__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 90%;
+  background: rgba(19, 69, 230, 0.9);
+  visibility: hidden;
+}
+.portfolio-item__info {
+  position: absolute;
+  bottom: 44px;
+  left: 80px;
+  color: white;
+  visibility: hidden;
+}
+
+.portfolio-item__info a {
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+  visibility: visible;
+  top: 20px;
+  left: 20px;
+}
+
+.portfolio-item:hover .portfolio-item__info {
+  visibility: visible;
+  bottom: 24px;
+  left: 60px;
+  font-size: 25px;
+}
+/* /portfolio secton */
